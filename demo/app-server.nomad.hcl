@@ -8,7 +8,7 @@ job "app-server" {
   } */
 
   group "webapp" {
-    count = 4
+    count = 8
 
     network {
       mode = "host"
