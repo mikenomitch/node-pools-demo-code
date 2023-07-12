@@ -1,0 +1,4 @@
+- Have the changes prepped for the app-server code change on screen
+  - Count change
+  - Memory change
+  - Different update policy
