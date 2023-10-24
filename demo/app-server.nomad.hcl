@@ -1,12 +1,6 @@
 job "app-server" {
   namespace = "apps"
 
-  /* constraint {
-    attribute = "${node.node_class}"
-    operator  = "!="
-    value     = "gpu"
-  } */
-
   group "webapp" {
     count = 8
 
@@ -41,6 +35,11 @@ job "app-server" {
           timeout  = "1s"
           method   = "GET"
         }
+      }
+
+      identity {
+        env  = true
+        file = true
       }
     }
 
